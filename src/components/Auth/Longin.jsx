@@ -1,14 +1,15 @@
 import React from 'react'
 import { useState } from 'react'
-const Longin = () => {
+const Longin = ({handleLogin}) => {
+
+    
 
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
     
     const submitHandler= (e)=>{
         e.preventDefault()
-        console.log("email is", email)
-        console.log("password is: ", password)
+        handleLogin(email,password)
 
         // Submit k baad khali kardo 
         setEmail("")
