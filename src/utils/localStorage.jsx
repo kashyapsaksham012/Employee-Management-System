@@ -1,4 +1,4 @@
-const employee = [
+const employees = [
   {
     "id": 1,
     "email": "employee1@example.com",
@@ -306,7 +306,7 @@ const admin = [
 ]
 
 export const setLocalStorage = ()=>{
-    localStorage.setItem('employees', JSON.stringify(employee))
+    localStorage.setItem('employees', JSON.stringify(employees))
     localStorage.setItem('admin', JSON.stringify(admin))
 }
 
